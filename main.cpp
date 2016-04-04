@@ -29,8 +29,12 @@ double calculate_pi(int iterations) {
     return 4. * ac / iterations;
 }
 int main(int argc, char** argv) {
-    int n=1000;
-    double pi = calculate_pi(n);
+    int n, nmax;
+	nmax=1000;
+	cout<<"How many shots?"<<endl;
+	cin >>n;
+	if (n>nmax){n=nmax;}
+	double pi = calculate_pi(n);
     cout << "Pi = " << pi << endl;
     return 0;
 }
