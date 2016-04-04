@@ -30,7 +30,7 @@ double calculate_pi(int iterations) {
 }
 int main(int argc, char** argv) {
     int n, nmax;
-	nmax=1000;
+	nmax=10000000;
 	cout<<"How many shots?"<<endl;
 	cin >>n;
 	if (n>nmax){n=nmax;}
