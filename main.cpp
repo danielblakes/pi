@@ -38,4 +38,3 @@ int main(int argc, char** argv) {
     cout << "Pi = " << pi << endl;
     return 0;
 }
-
