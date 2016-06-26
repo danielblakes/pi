@@ -39,11 +39,15 @@ double calculate_pi(int iterations) {
     }
     return 4. * ac / iterations;
 }
+
 int main(int argc, char** argv) {
     int n, nmax;
 	nmax=10000000;
-	cout<<"How many shots?"<<endl;
-	cin >>n;
+	if(argc>1) n=atoi(*(argv+1));
+	  else{
+	    cout<<"How many shots?"<<endl;
+	    cin >>n;
+	  }
 	if (n>nmax){n=nmax;}
 	double pi = calculate_pi(n);
     cout << "Pi = " << pi << endl;
